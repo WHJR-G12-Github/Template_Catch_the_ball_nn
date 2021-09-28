@@ -1,13 +1,13 @@
 import pygame, sys, random
 import neat
 
-#initialize pygame to  use it's functions
+# Initialize pygame to  use it's functions
 pygame.init()
 clock=pygame.time.Clock()
 
 #create a window where game will Run
 screen = pygame.display.set_mode((400,400))
-#title 
+# Setting title for the game
 pygame.display.set_caption("Catch the Ball")
 
 # Loading images
@@ -68,7 +68,7 @@ def eval_genomes(genomes, config):
 
             player.x=player.x+speed
 
-            # Caclulating the output and decision making
+            # Calculating the output and decision making
             # Calculate the ouput using 'activate()' function
             # Pass x-coordinates of ball and player as arguments to 'activate()'
             output = net.activate((       ,       ))   
