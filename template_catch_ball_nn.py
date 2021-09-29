@@ -1,11 +1,11 @@
 import pygame, sys, random
 import neat
 
-# Initialize pygame to  use it's functions
+# Initializing pygame to  use it's functions
 pygame.init()
 clock=pygame.time.Clock()
 
-#create a window where game will Run
+# Creating a window where game will Run
 screen = pygame.display.set_mode((400,400))
 # Setting title for the game
 pygame.display.set_caption("Catch the Ball")
